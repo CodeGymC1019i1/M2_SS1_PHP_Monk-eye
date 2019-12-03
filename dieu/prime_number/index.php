@@ -23,19 +23,6 @@ for ($i = 0; $i < 100; $i++) {
 }
 echo "<br/>";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $numberPrime = $_POST["numberPrime"];
-    echo $numberPrime." so nguyen to dau tien la : ";
-    $N = 2;
-    $count = 0;
-    while($count <$numberPrime){
-        if(isPrimeNumber($N)){
-            echo ($N . " ");
-            $count++;
-        }
-        $N++;
-    }
-}
 ?>
 
 
@@ -53,3 +40,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 </body>
 </html>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $numberPrime = $_POST["numberPrime"];
+    echo $numberPrime." so nguyen to dau tien la : ";
+    $N = 2;
+    $count = 0;
+    while($count <$numberPrime){
+        if(isPrimeNumber($N)){
+            echo ($N . " ");
+            $count++;
+        }
+        $N++;
+    }
+}
+?>

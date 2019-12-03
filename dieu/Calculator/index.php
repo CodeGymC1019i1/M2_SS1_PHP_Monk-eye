@@ -5,21 +5,44 @@
     <head>
         <meta charset="UTF-8">
         <title>Calculator</title>
+        <style>
+            fieldset{
+                width: 350px;
+            }
+            table th{
+                text-align: left;
+            }
+        </style>
     </head>
     <body>
         <h1>Simple Calculator</h1>
         <form method="post">
             <fieldset>
                 <legend>calculator</legend>
-                <label>First Operand: </label><input type="number" name="number1"><br/>
-                <label>Operator : </label><select name="operator">
-                                                <option value="addition">Addition</option>                                               <option value="addition">Addition</option>
-                                                <option value="subtraction">Subtraction</option>
-                                                <option value="multipication">Multiplication</option>
-                                                <option value="division">Division</option>
-                </select><br/>
-                <label>Second Operand: </label><input type="number" name="number2">
-                <button type="submit" id="submit">calculate</button>
+                <table>
+                    <tr>
+                        <th>First Operand:</th>
+                        <td><input type="number" name="number1"></td>
+                    </tr>
+                    <tr>
+                        <th>Operator :</th>
+                        <td><select name="operator">
+                                <option value="addition">Addition</option>                                               <option value="addition">Addition</option>
+                                <option value="subtraction">Subtraction</option>
+                                <option value="multipication">Multiplication</option>
+                                <option value="division">Division</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Second Operand: </th>
+                        <td><input type="number" name="number2"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><button type="submit" id="submit">calculate</button></td>
+                    </tr>
+                </table>
             </fieldset>
         </form>
         <br/>
