@@ -81,7 +81,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }
     }
     catch (DivideByZeroException $ex){
-        echo "DIVIDE BY ZERO EXCEPTION!";
+        echo "so bi chi bang 0";
     }
 
 }
